@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#071c3d">
-<meta name="description" content="Heizkosten für Öl, Gas und Wärmepumpe unabhängig vergleichen. Technik verstehen mit Robert – SHK-Wissen einfach erklärt.">
+<meta name="description" content="Heizkosten für Öl, Gas, Pellets und Wärmepumpe unabhängig vergleichen. Technik verstehen mit Robert – SHK-Wissen einfach erklärt.">
 <title>Heizungsrechner | Technik verstehen mit Robert</title>
 <style>
 :root{--navy:#071c3d;--blue:#0e3465;--cyan:#1699e0;--orange:#fc7926;--muted:#627388;--border:#dde7f0;--bg:#f4f7fb;--white:#fff;--ink:#0e2340}
@@ -24,6 +24,36 @@ footer{border-top:1px solid #dae4ef;padding:30px 0 60px;margin-top:34px;font-siz
 @media(max-width:850px){.layout{grid-template-columns:1fr}.headlabel{display:none}.brandicon{width:64px;height:64px}.hero{padding:40px 0}.panel{padding:22px}.stats{gap:9px}}
 @media(max-width:450px){.wrap{width:min(100% - 24px,1160px)}.brandsub{font-size:10px;letter-spacing:.07em}.brandtitle{font-size:20px}.brandicon{width:57px;height:57px}.brand{gap:10px}.fieldgrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.segment span{font-size:11px}.panel{padding:18px}.hero h1{font-size:33px}}
 @media print{body{background:white}.brandbar,.panel{box-shadow:none}.hero{padding:16px 0!important;print-color-adjust:exact}.layout{display:block}.layout>.stack{display:block}.panel{break-inside:avoid;margin:12px 0;padding:16px}.btnrow{display:none}details:not([open])> :not(summary){display:block!important}footer{padding:10px 0}}
+
+/* Modernes, durchgängiges Dark-Navy-Design – Technik verstehen mit Robert */
+:root{color-scheme:dark;--navy:#06162a;--blue:#143d70;--cyan:#47beff;--orange:#ff962f;--muted:#a1b5cc;--border:#2a486c;--bg:#07172a;--white:#ffffff;--ink:#f1f7ff}
+body{background:radial-gradient(ellipse at 80% 0,#15345b 0,transparent 45%),#07172a;color:var(--ink)}
+.brandbar{background:#091c33;border-bottom:1px solid #315071;box-shadow:0 10px 28px #0000001c}
+.brand{color:#f5f9ff}.brandtitle{color:#fff}.brandtitle small{color:#bcd5ef}.brandtitle b{color:#fff}.brandsub{color:#8fcbed}.headlabel{color:#8fcbed}
+.hero{background:radial-gradient(circle at 85% 16%,#174976 0%,transparent 40%),linear-gradient(112deg,#061325,#0a2545 55%,#123b63);border-bottom:1px solid #244666}
+.eyebrow{color:#71caff}.hero p{color:#cbdef1}.hero h1{color:white}.tag{background:#1f456931;border-color:#5982a569;color:#e5f4ff}
+.panel{background:linear-gradient(150deg,#102943,#0b2139 90%);border:1px solid #2a4667;box-shadow:0 16px 35px #01081452;color:#eff7ff}
+.panel h2{color:#f4f9ff}.muted{color:#acbfd4}.num{background:#123d61;color:#9ee0ff;border:1px solid #2d739c}
+.sectiontitle{border-bottom:1px solid #284361;padding-bottom:15px}
+.field>span{color:#d2e3f5}.control input,.field select{color:#f2f9ff;background:#071b31;border:1px solid #355677;box-shadow:inset 0 1px 2px #0000001c}
+.control input:focus,.field select:focus{border-color:#47beff;box-shadow:0 0 0 3px #31a4e334}.control .unit{color:#98b6d1}.control input::placeholder{color:#83a0bc}
+.segment{grid-template-columns:repeat(4,minmax(0,1fr));background:#061a2e;border:1px solid #254563}
+.segment span{color:#a8c1dc;white-space:normal;min-height:43px;display:grid;place-items:center;line-height:1.15;padding:9px 4px}
+.segment input:checked+span{background:linear-gradient(130deg,#214c76,#183e68);color:#effaff;box-shadow:0 0 0 1px #4c90bc}
+.info,.note{color:#a2b7ce}.details{border-top-color:#315071}summary{color:#91d5ff}
+.btn{background:linear-gradient(115deg,#1983cb,#1267a8);box-shadow:0 5px 18px #053e704a}.btn.secondary{color:#c9e8ff;background:#112e4b;border:1px solid #366287}
+.summary{background:radial-gradient(circle at 88% 8%,#1b6184 0%,transparent 38%),linear-gradient(145deg,#103964,#08213d);border:1px solid #39769c;box-shadow:0 16px 42px #0005}
+.summary .muted{color:#c0d7e9}.summary .topchip{color:#b3ecff;border-color:#5888aa;background:#174b6e}.big{color:#fff}.big small{color:#b8d9f2}.stats{border-top-color:#4783a45e}.stat span{color:#bad8ef}.stat strong{color:#fff}
+.compareitem{background:#0b2037;border-color:#2a4969}.compareitem.best{background:linear-gradient(110deg,#103a5b,#0c324c);border-color:#40bdea}.comparetop .amount{color:#f5fbff}
+.barbg{background:#183756}.barfill{background:linear-gradient(90deg,#376894,#6290bb)}.compareitem.best .barfill{background:linear-gradient(90deg,#178ad2,#46d2f1)}
+.comparisonmeta{color:#a4bad0}.minilabel{color:#6de1ff}
+th{color:#bfd4e9;border-bottom-color:#355474}td{border-bottom-color:#274260}.selected td{background:#174564;color:#b8edff}
+.break{background:#0b2d4c;border:1px solid #315b7c;color:#d5e9f9}
+.formulabox{background:#0b2b47;border:1px solid #31536f;color:#d2e4f5}.formulabox b{color:#8fe1ff}
+footer{border-top-color:#294363;background:#06172b;color:#91a9c1}footer b{color:#d0eaff}
+@media(max-width:540px){.segment{grid-template-columns:repeat(2,minmax(0,1fr))}.segment span{min-height:38px}.brandsub{line-height:1.3}}
+@media print{body{color:#111;background:#fff}.panel,.summary{color:#111;background:#fff;box-shadow:none}.panel h2,.summary h2,.summary .big,.summary .stat strong,.comparetop .amount{color:#111}.muted,.info,.note{color:#444}.brandbar{background:white}.brandtitle{color:#111}.brandtitle small{color:#333}.formulabox,.break{color:#222;background:#eee}}
+
 </style>
 </head>
 <body>
@@ -38,12 +68,12 @@ footer{border-top:1px solid #dae4ef;padding:30px 0 60px;margin-top:34px;font-siz
 <div><div class="brandtitle">Technik verstehen<small>mit <b>Robert</b></small></div><div class="brandsub">SHK-Wissen einfach erklärt</div></div>
 </a><div class="headlabel">Dein Heizungsrechner</div>
 </div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Heizklar · Dein Energievergleich</div><h1>Weniger raten.<br>Besser rechnen.</h1><p>Was kostet dich Heizen mit Öl, Gas oder Wärmepumpe? Vergleiche alle drei Systeme auf Grundlage desselben Wärmebedarfs – mit deinen eigenen Preisen.</p><div class="heroline"><span class="tag">Öl &amp; Gas</span><span class="tag">Wärmepumpe &amp; JAZ</span><span class="tag">Wirtschaftlichkeit</span></div></div></section>
+<section class="hero"><div class="wrap"><div class="eyebrow">Heizklar · Dein Energievergleich</div><h1>Weniger raten.<br>Besser rechnen.</h1><p>Was kostet dich Heizen mit Öl, Gas, Pellets oder Wärmepumpe? Vergleiche alle vier Systeme auf Grundlage desselben Wärmebedarfs – mit deinen eigenen Preisen.</p><div class="heroline"><span class="tag">01 / ÖL</span><span class="tag">02 / GAS</span><span class="tag">03 / PELLETS</span><span class="tag">04 / WÄRMEPUMPE</span></div></div></section>
 <main class="wrap">
 <div class="layout"><div class="stack">
 <section class="panel" aria-labelledby="heatheading"><div class="sectiontitle"><span class="num">1</span><div><h2 id="heatheading">Dein Jahresverbrauch</h2><p class="muted">Was ist dir aus deiner Heizkostenabrechnung bekannt?</p></div></div>
 <div class="segment" role="group" aria-label="Berechnungsgrundlage">
-<label><input type="radio" name="source" value="oil" checked><span>Heizöl · Liter</span></label><label><input type="radio" name="source" value="gas"><span>Gas · kWh</span></label><label><input type="radio" name="source" value="heat"><span>Wärme · kWh</span></label>
+<label><input type="radio" name="source" value="oil" checked><span>Heizöl · Liter</span></label><label><input type="radio" name="source" value="gas"><span>Gas · kWh</span></label><label><input type="radio" name="source" value="pellet"><span>Pellets · kg</span></label><label><input type="radio" name="source" value="heat"><span>Wärme · kWh</span></label>
 </div>
 <label class="field"><span id="baseLabel">Heizöl pro Jahr</span><div class="control hasunit"><input id="base" type="text" inputmode="decimal" value="2500" aria-describedby="basehelp"><span class="unit" id="baseUnit">Liter / Jahr</span></div></label>
 <p id="basehelp" class="info">Ein volles, repräsentatives Jahr verwenden. Warmwasser bei allen Systemen im gleichen Umfang berücksichtigen.</p>
@@ -52,14 +82,18 @@ footer{border-top:1px solid #dae4ef;padding:30px 0 60px;margin-top:34px;font-siz
 <div class="fieldgrid">
 <label class="field"><span>Heizöl · €/Liter</span><div class="control hasunit"><input id="oilprice" value="1,05" inputmode="decimal"><span class="unit">€/Liter</span></div></label>
 <label class="field"><span>Gas · ct/kWh</span><div class="control hasunit"><input id="gasprice" value="11" inputmode="decimal"><span class="unit">ct/kWh</span></div></label>
+<label class="field"><span>Pellets · €/Tonne</span><div class="control hasunit"><input id="pelletprice" value="350" inputmode="decimal"><span class="unit">€/t</span></div></label>
 <label class="field"><span>WP-Strom · ct/kWh</span><div class="control hasunit"><input id="elprice" value="28" inputmode="decimal"><span class="unit">ct/kWh</span></div></label>
 <label class="field"><span>JAZ · Jahresarbeitszahl</span><div class="control"><input id="jaz" value="3,5" inputmode="decimal"></div></label>
 <label class="field"><span>Öl-Nutzungsgrad · %</span><div class="control hasunit"><input id="oileff" value="80" inputmode="decimal"><span class="unit">%</span></div></label>
 <label class="field"><span>Gas-Nutzungsgrad · %</span><div class="control hasunit"><input id="gaseff" value="90" inputmode="decimal"><span class="unit">%</span></div></label>
+<label class="field"><span>Pellet-Nutzungsgrad · %</span><div class="control hasunit"><input id="pelleteff" value="88" inputmode="decimal"><span class="unit">%</span></div></label>
+<label class="field"><span>Pellet-Heizwert · kWh/kg</span><div class="control hasunit"><input id="pelletvalue" value="4,8" inputmode="decimal"><span class="unit">kWh/kg</span></div></label>
 </div><p class="info">JAZ = abgegebene Jahreswärme ÷ gesamter Jahresstrom inkl. Heizstab und erfasster Hilfsenergie. Nutzungsgrade sind Jahreswerte, keine Momentanwirkungsgrade.</p>
 <details class="details"><summary>Fixkosten &amp; Zusatzstrom einstellen</summary><div class="fieldgrid costgrid">
 <label class="field"><span>Öl · €/Jahr</span><div class="control hasunit"><input id="oilfixed" value="300" inputmode="decimal"><span class="unit">€/Jahr</span></div></label>
 <label class="field"><span>Gas · €/Jahr</span><div class="control hasunit"><input id="gasfixed" value="350" inputmode="decimal"><span class="unit">€/Jahr</span></div></label>
+<label class="field"><span>Pellets · €/Jahr</span><div class="control hasunit"><input id="pelletfixed" value="350" inputmode="decimal"><span class="unit">€/Jahr</span></div></label>
 <label class="field"><span>WP · €/Jahr</span><div class="control hasunit"><input id="wpfixed" value="250" inputmode="decimal"><span class="unit">€/Jahr</span></div></label></div>
 <p class="info">Beispiele: Wartung, Schornsteinfeger, Grundpreis und zusätzliche Betriebskosten. Doppelerfassungen vermeiden.</p></details></section>
 <div class="btnrow"><button class="btn secondary" id="reset" type="button">↺ Zurücksetzen</button><button class="btn" id="print" type="button">Ergebnis drucken ↗</button></div>
@@ -67,18 +101,18 @@ footer{border-top:1px solid #dae4ef;padding:30px 0 60px;margin-top:34px;font-siz
 <div class="stack">
 <section class="panel summary" aria-live="polite"><span class="topchip">Dein Ergebnis · laufende Kosten</span><h2 id="winner">Wärmepumpe ist hier am günstigsten</h2><p class="muted">Berechnet mit deinen Eingaben, für denselben Wärmebedarf.</p><p class="big"><span id="saving">1.075 €</span> <small>pro Jahr Unterschied zu Öl</small></p>
 <div class="stats"><div class="stat"><span>Nutzwärme / Jahr</span><strong id="heatval">20.000 kWh</strong></div><div class="stat"><span>WP-Strom / Jahr</span><strong id="power">5.714 kWh</strong></div><div class="stat"><span>WP-Kosten / Monat¹</span><strong id="wpm">154 €</strong></div></div></section>
-<section class="panel"><div class="eyebrow" style="color:#087ba9">Gleiche Wärme, andere Kosten</div><h2>Deine Systeme im Vergleich</h2><div id="compare" aria-live="polite"></div><p class="note">¹ Jahreskosten ÷ 12, kein prognostizierter Abschlag. Alle Kosten inkl. angesetzter Fixkosten; Anschaffungskosten nicht enthalten.</p></section>
-<section class="panel"><div class="eyebrow" style="color:#087ba9">Was wäre, wenn?</div><h2>Wie die JAZ den Verbrauch verändert</h2><p class="muted">Gleicher Wärmebedarf, unterschiedlicher Anlagenwirkungsgrad.</p><div class="tablewrap"><table><thead><tr><th>JAZ</th><th>Strom/Jahr</th><th>Gesamtkosten/Jahr</th></tr></thead><tbody id="jazrows"></tbody></table></div><p class="break" id="breakEven"></p></section>
+<section class="panel"><div class="eyebrow" style="color:#75bde9">Gleiche Wärme, andere Kosten</div><h2>Deine Systeme im Vergleich</h2><div id="compare" aria-live="polite"></div><p class="note">¹ Jahreskosten ÷ 12, kein prognostizierter Abschlag. Alle Kosten inkl. angesetzter Fixkosten; Anschaffungskosten nicht enthalten.</p></section>
+<section class="panel"><div class="eyebrow" style="color:#75bde9">Was wäre, wenn?</div><h2>Wie die JAZ den Verbrauch verändert</h2><p class="muted">Gleicher Wärmebedarf, unterschiedlicher Anlagenwirkungsgrad.</p><div class="tablewrap"><table><thead><tr><th>JAZ</th><th>Strom/Jahr</th><th>Gesamtkosten/Jahr</th></tr></thead><tbody id="jazrows"></tbody></table></div><p class="break" id="breakEven"></p></section>
 </div></div>
 <div class="layout" style="margin-top:24px"><section class="panel"><h2>Lohnt sich ein Wechsel?</h2><p class="muted">Einfache Amortisation gegenüber deiner Vergleichsheizung.</p>
-<div class="fieldgrid" style="margin-top:18px"><label class="field"><span>Vergleichsheizung</span><select id="compareTo"><option value="oil">Ölheizung</option><option value="gas">Gasheizung</option></select></label><label class="field"><span>Mehrinvestition Wärmepumpe · €</span><div class="control hasunit"><input id="investment" value="18000" inputmode="decimal"><span class="unit">€</span></div></label></div><p class="break" id="payback">–</p><p class="info">Zusätzliche Investition nach individuell bestätigten Zuschüssen, abzüglich der Alternative. Bei Weiterbetrieb einer Bestandsanlage: gesamte Nettoinvestition der WP. Ohne Zinsen, Preisänderungen, Reparaturen oder Ersatzinvestitionen.</p>
-</section><section class="panel"><h2>Nachvollziehbar bis zur Formel</h2><div class="formulabox" id="formulas"></div><details class="details"><summary>Annahmen, Grenzen &amp; Quellen</summary><p class="info">Die Modellrechnung nutzt 10 kWh/Liter Heizöl und individuelle Jahresnutzungsgrade. Gaswerte sind bezogen auf abgerechnete kWh. Die eingegebene JAZ steht für die gesamte Wärmepumpenanlage. Es handelt sich nicht um eine Heizlastberechnung nach DIN EN 12831, keine Förderzusage und keine Wirtschaftlichkeitsgarantie. Preise und Betriebskosten bitte selbst prüfen.</p></details></section></div>
+<div class="fieldgrid" style="margin-top:18px"><label class="field"><span>Vergleichsheizung</span><select id="compareTo"><option value="oil">Ölheizung</option><option value="gas">Gasheizung</option><option value="pellet">Pelletheizung</option></select></label><label class="field"><span>Mehrinvestition Wärmepumpe · €</span><div class="control hasunit"><input id="investment" value="18000" inputmode="decimal"><span class="unit">€</span></div></label></div><p class="break" id="payback">–</p><p class="info">Zusätzliche Investition nach individuell bestätigten Zuschüssen, abzüglich der Alternative. Bei Weiterbetrieb einer Bestandsanlage: gesamte Nettoinvestition der WP. Ohne Zinsen, Preisänderungen, Reparaturen oder Ersatzinvestitionen.</p>
+</section><section class="panel"><h2>Nachvollziehbar bis zur Formel</h2><div class="formulabox" id="formulas"></div><details class="details"><summary>Annahmen, Grenzen &amp; Quellen</summary><p class="info">Die Modellrechnung nutzt 10 kWh/Liter Heizöl sowie den einstellbaren Pellet-Heizwert (Beispiel: 4,8 kWh/kg) und individuelle Jahresnutzungsgrade. Gaswerte sind bezogen auf abgerechnete kWh. Pelletpreise beziehen sich auf eine Tonne bzw. 1.000 kg. Die angezeigten Preise sind frei änderbare Beispielwerte und keine aktuellen Angebote. Die eingegebene JAZ steht für die gesamte Wärmepumpenanlage. Es handelt sich nicht um eine Heizlastberechnung nach DIN EN 12831, keine Förderzusage und keine Wirtschaftlichkeitsgarantie. Preise und Betriebskosten bitte selbst prüfen.</p></details></section></div>
 </main>
 <footer><div class="wrap"><b>TECHNIK VERSTEHEN MIT ROBERT</b> · SHK-Wissen einfach erklärt<br>Heizklar · Unabhängige Modellrechnung · Preise selbst festlegen. Zusammenhänge verstehen.</div></footer>
 <script>
 (function(){
 "use strict";
-var defaultValues={base:"2500",oilprice:"1,05",gasprice:"11",elprice:"28",jaz:"3,5",oileff:"80",gaseff:"90",oilfixed:"300",gasfixed:"350",wpfixed:"250",investment:"18000"};
+var defaultValues={base:"2500",oilprice:"1,05",gasprice:"11",pelletprice:"350",elprice:"28",jaz:"3,5",oileff:"80",gaseff:"90",pelleteff:"88",pelletvalue:"4,8",oilfixed:"300",gasfixed:"350",pelletfixed:"350",wpfixed:"250",investment:"18000"};
 var euro=new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR",maximumFractionDigits:0});
 var whole=new Intl.NumberFormat("de-DE",{maximumFractionDigits:0});
 var dec=new Intl.NumberFormat("de-DE",{minimumFractionDigits:1,maximumFractionDigits:1});
@@ -88,23 +122,24 @@ var fmt=function(n){return euro.format(n)}, fnum=function(n){return whole.format
 var state="oil",last="";
 function update(){
 state=document.querySelector('input[name="source"]:checked').value;
-get("baseLabel").textContent=state==="oil"?"Heizöl pro Jahr":state==="gas"?"Gasverbrauch pro Jahr":"Wärmebedarf pro Jahr";
-get("baseUnit").textContent=state==="oil"?"Liter / Jahr":"kWh / Jahr";
+get("baseLabel").textContent=state==="oil"?"Heizöl pro Jahr":state==="gas"?"Gasverbrauch pro Jahr":state==="pellet"?"Pelletverbrauch pro Jahr":"Wärmebedarf pro Jahr";
+get("baseUnit").textContent=state==="oil"?"Liter / Jahr":state==="pellet"?"kg / Jahr":"kWh / Jahr";
 var p={};Object.keys(defaultValues).forEach(function(k){p[k]=val(k)});
-var ok=Object.keys(p).every(function(k){return Number.isFinite(p[k])&&p[k]>=0})&&p.base>0&&p.jaz>0&&p.oileff>0&&p.oileff<=100&&p.gaseff>0&&p.gaseff<=100;
+var ok=Object.keys(p).every(function(k){return Number.isFinite(p[k])&&p[k]>=0})&&p.base>0&&p.jaz>0&&p.oileff>0&&p.oileff<=100&&p.gaseff>0&&p.gaseff<=100&&p.pelleteff>0&&p.pelleteff<=100&&p.pelletvalue>0;
 if(!ok){get("winner").textContent="Bitte Eingaben prüfen";get("saving").textContent="–";["heatval","power","wpm"].forEach(function(k){get(k).textContent="–"});get("compare").textContent="Alle Werte müssen gültig und positiv sein. Wirkungsgrade maximal 100 %.";get("jazrows").textContent="";get("payback").textContent="Bitte Werte prüfen.";get("breakEven").textContent="";get("formulas").textContent="Bitte Werte prüfen.";return;}
-var heat=state==="oil"?p.base*10*p.oileff/100:state==="gas"?p.base*p.gaseff/100:p.base;
-var oilL=heat/(10*p.oileff/100), gasK=heat/(p.gaseff/100), power=heat/p.jaz;
+var heat=state==="oil"?p.base*10*p.oileff/100:state==="gas"?p.base*p.gaseff/100:state==="pellet"?p.base*p.pelletvalue*p.pelleteff/100:p.base;
+var oilL=heat/(10*p.oileff/100), gasK=heat/(p.gaseff/100), pelletKg=heat/(p.pelletvalue*p.pelleteff/100), power=heat/p.jaz;
 var data=[{id:"oil",name:"Ölheizung",cost:oilL*p.oilprice+p.oilfixed,consumption:fnum(oilL)+" Liter pro Jahr"},
 {id:"gas",name:"Gasheizung",cost:gasK*p.gasprice/100+p.gasfixed,consumption:fnum(gasK)+" kWh pro Jahr"},
+{id:"pellet",name:"Pelletheizung",cost:pelletKg/1000*p.pelletprice+p.pelletfixed,consumption:fnum(pelletKg)+" kg pro Jahr"},
 {id:"wp",name:"Wärmepumpe",cost:power*p.elprice/100+p.wpfixed,consumption:fnum(power)+" kWh pro Jahr"}];
 data.sort(function(a,b){return a.cost-b.cost});
-var best=data[0],max=Math.max.apply(null,data.map(function(d){return d.cost})),oilCost=data.find(function(d){return d.id==="oil"}).cost,gasCost=data.find(function(d){return d.id==="gas"}).cost,wpCost=data.find(function(d){return d.id==="wp"}).cost;
-var comparative=best.id==="oil"?gasCost:oilCost;
-var dif=Math.abs(comparative-best.cost);
+var best=data[0],max=Math.max.apply(null,data.map(function(d){return d.cost})),oilCost=data.find(function(d){return d.id==="oil"}).cost,gasCost=data.find(function(d){return d.id==="gas"}).cost,pelletCost=data.find(function(d){return d.id==="pellet"}).cost,wpCost=data.find(function(d){return d.id==="wp"}).cost;
+var comparative=data[data.length-1];
+var dif=Math.max(0,comparative.cost-best.cost);
 get("winner").textContent=best.name+" hat hier die niedrigsten Jahreskosten";
 get("saving").textContent=fmt(dif);
-get("saving").nextElementSibling.textContent="pro Jahr weniger als "+(best.id==="oil"?"Gas": "Öl");
+get("saving").nextElementSibling.textContent="pro Jahr weniger als "+comparative.name;
 get("heatval").textContent=fnum(heat)+" kWh";
 get("power").textContent=fnum(power)+" kWh";
 get("wpm").textContent=fmt(wpCost/12);
@@ -114,14 +149,14 @@ get("jazrows").innerHTML=jazs.map(function(j){var e=heat/j*p.elprice/100+p.wpfix
 var kwhPrice=p.elprice/100;
 var threshold=(oilCost-p.wpfixed)>0?heat*kwhPrice/(oilCost-p.wpfixed):Infinity;
 get("breakEven").textContent=Number.isFinite(threshold)?"Ab einer JAZ über "+fdec(threshold)+" ist die Wärmepumpe unter diesen Annahmen im Betrieb günstiger als Öl.":"Unter diesen Annahmen liegt kein positiver JAZ-Schwellenwert für einen Vorteil gegenüber Öl vor.";
-var current=get("compareTo").value==="gas"?gasCost:oilCost, yearlySave=current-wpCost;
+var current=get("compareTo").value==="gas"?gasCost:get("compareTo").value==="pellet"?pelletCost:oilCost, yearlySave=current-wpCost;
 get("payback").textContent=p.investment===0?"Keine Mehrinvestition angesetzt.":yearlySave>0?"Rechnerisch nach "+fdec(p.investment/yearlySave)+" Jahren ausgeglichen ("+fmt(yearlySave)+" jährliche Einsparung).":"Mit diesen Eingaben keine Amortisation durch laufende Kosteneinsparungen.";
-var basis=state==="oil"?fnum(p.base)+" Liter × 10 kWh/Liter × "+fnum(p.oileff)+" %":state==="gas"?fnum(p.base)+" kWh Gas × "+fnum(p.gaseff)+" %":fnum(p.base)+" kWh vorgegebene Nutzwärme";
+var basis=state==="oil"?fnum(p.base)+" Liter × 10 kWh/Liter × "+fnum(p.oileff)+" %":state==="gas"?fnum(p.base)+" kWh Gas × "+fnum(p.gaseff)+" %":state==="pellet"?fnum(p.base)+" kg Pellets × "+fdec(p.pelletvalue)+" kWh/kg × "+fnum(p.pelleteff)+" %":fnum(p.base)+" kWh vorgegebene Nutzwärme";
 get("formulas").innerHTML='<b>1. Nutzwärme:</b> '+basis+' = <b>'+fnum(heat)+' kWh/Jahr</b><br><b>2. WP-Strom:</b> '+fnum(heat)+' ÷ '+fdec(p.jaz)+' = <b>'+fnum(power)+' kWh/Jahr</b><br><b>3. WP-Kosten:</b> '+fnum(power)+' × '+fdec(kwhPrice)+' €/kWh + '+fmt(p.wpfixed)+' = <b>'+fmt(wpCost)+'/Jahr</b>';
 }
 var debounce=false;
 document.querySelectorAll('input,select').forEach(function(el){el.addEventListener("input",update);el.addEventListener("change",update)});
-document.querySelectorAll('input[name="source"]').forEach(function(el){el.addEventListener("change",function(){get("base").value=this.value==="oil"?"2500":this.value==="gas"?"22500":"20000";update()})});
+document.querySelectorAll('input[name="source"]').forEach(function(el){el.addEventListener("change",function(){get("base").value=this.value==="oil"?"2500":this.value==="gas"?"22500":this.value==="pellet"?"4500":"20000";update()})});
 get("reset").addEventListener("click",function(){Object.keys(defaultValues).forEach(function(k){get(k).value=defaultValues[k]});document.querySelector('input[value="oil"][name="source"]').checked=true;get("compareTo").value="oil";update()});
 get("print").addEventListener("click",function(){window.print()});
 update();
