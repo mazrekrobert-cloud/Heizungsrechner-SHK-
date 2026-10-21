@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071c3d">
+<meta name="description" content="Heizkosten für Öl, Gas und Wärmepumpe unabhängig vergleichen. Technik verstehen mit Robert – SHK-Wissen einfach erklärt.">
+<title>Heizungsrechner | Technik verstehen mit Robert</title>
+<style>
+:root{--navy:#071c3d;--blue:#0e3465;--cyan:#1699e0;--orange:#fc7926;--muted:#627388;--border:#dde7f0;--bg:#f4f7fb;--white:#fff;--ink:#0e2340}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.5}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #67bffc;outline-offset:3px}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}
+.brandbar{background:white;border-bottom:1px solid var(--border)}.brandline{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--navy)}
+.brandicon{width:75px;height:75px;flex:none}.brandtitle{font-size:clamp(20px,2.35vw,32px);font-weight:850;letter-spacing:-.05em;line-height:1.09}.brandtitle small{display:block;font-size:.69em;font-weight:600;letter-spacing:-.02em;margin-top:5px}.brandsub{font-size:13px;letter-spacing:.115em;color:#3d5571;margin-top:7px}.headlabel{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
+.hero{background:radial-gradient(circle at 83% 5%,#21558b 0%,transparent 35%),linear-gradient(115deg,#061933,#103868);color:white;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:370px;height:370px;border:1px solid #ffffff21;border-radius:50%;right:-90px;top:-150px;pointer-events:none}.eyebrow{color:#84cefd;font-size:12px;letter-spacing:.18em;font-weight:850;text-transform:uppercase}.hero h1{font-size:clamp(32px,4.8vw,57px);line-height:1.12;max-width:750px;letter-spacing:-.045em;margin:11px 0}.hero p{color:#c6d6e9;font-size:17px;max-width:660px}.heroline{display:flex;gap:13px;flex-wrap:wrap;align-items:center;margin-top:24px}.tag{font-size:12px;font-weight:750;border:1px solid #ffffff3b;border-radius:30px;padding:7px 13px;color:#e8f4ff}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:24px;margin-top:28px;align-items:start}.stack{display:grid;gap:22px}
+.panel{background:white;border:1px solid var(--border);box-shadow:0 14px 38px #17355709;border-radius:19px;padding:27px;min-width:0}.panel h2{margin:0 0 7px;font-size:24px;letter-spacing:-.035em}.sectiontitle{display:flex;gap:13px;align-items:flex-start;margin-bottom:17px}.num{background:#e6f5ff;border:1px solid #c4e9ff;color:#116cab;border-radius:11px;display:grid;place-items:center;min-width:34px;height:34px;font-size:16px;font-weight:900}.muted{color:var(--muted);font-size:13px;margin:0}.field{display:block;margin:0 0 15px}.field>span{display:block;font-size:13px;color:#3d536d;font-weight:750;margin-bottom:7px}.control{position:relative}.control input,.field select{border:1px solid #cfdce9;background:#fff;padding:12px 14px;border-radius:10px;width:100%;color:var(--navy);font-weight:730;min-height:48px;outline:0}.control input:focus,.field select:focus{border-color:#41a7e7;box-shadow:0 0 0 4px #179fe41b}.control .unit{position:absolute;right:13px;top:12px;color:#73849b;font-size:13px;pointer-events:none}.control.hasunit input{padding-right:80px}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.segment{display:grid;grid-template-columns:repeat(3,1fr);background:#edf3fa;border-radius:12px;padding:4px;gap:4px;margin-bottom:17px}.segment label{position:relative}.segment input{position:absolute;opacity:0}.segment span{display:block;padding:10px 6px;text-align:center;border-radius:9px;font-size:12px;font-weight:800;cursor:pointer}.segment input:checked+span{background:white;color:#075996;box-shadow:0 2px 9px #12254020}.segment input:focus-visible+span{outline:3px solid #67bffc}.info{font-size:12px;color:#708096;line-height:1.55}.details{border-top:1px solid var(--border);margin-top:10px;padding-top:15px}summary{font-weight:800;color:var(--blue);cursor:pointer}summary:hover{text-decoration:underline}.costgrid{margin-top:18px}
+.btnrow{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end;padding:6px 0 0}.btn{background:#103c6f;color:white;border:0;border-radius:10px;padding:11px 16px;font-size:13px;font-weight:780}.btn.secondary{background:white;border:1px solid #cfdfed;color:#113c6c}.btn:hover{filter:brightness(1.1)}.summary{background:linear-gradient(140deg,#09284f,#0b396e);border:1px solid #2e5480;color:white}.summary .muted{color:#b9d1e9}.topchip{display:inline-block;background:#ffffff1a;border:1px solid #ffffff39;border-radius:30px;padding:5px 10px;text-transform:uppercase;letter-spacing:.13em;font-size:10px;color:#a8e0ff;font-weight:900}.summary h2{font-size:clamp(25px,3vw,34px);line-height:1.14;margin:14px 0 8px}.big{font-size:clamp(31px,4vw,49px);font-weight:900;color:#fff;letter-spacing:-.055em;line-height:1.1;margin:22px 0 0}.big small{font-size:14px;font-weight:650;color:#bad1e9;letter-spacing:0}.stats{border-top:1px solid #ffffff2c;margin-top:22px;padding-top:21px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat span{display:block;font-size:11px;color:#b0cde7}.stat strong{display:block;font-size:17px;color:white;margin-top:3px}
+.compareitem{border:1px solid var(--border);border-radius:12px;padding:13px 15px;margin-top:10px;position:relative}.compareitem.best{border:2px solid #31a8dc;background:#f2fbff}.comparetop{display:flex;align-items:center;justify-content:space-between;gap:12px}.comparetop strong{font-size:15px}.comparetop .amount{font-size:19px;color:#0d3b68;font-weight:900}.barbg{height:9px;border-radius:9px;background:#edf3f9;overflow:hidden;margin:10px 0 7px}.barfill{height:100%;border-radius:9px;background:#8095b5;transition:width .3s}.compareitem.best .barfill{background:linear-gradient(90deg,#139bd9,#33c2c6)}.comparisonmeta{font-size:11px;color:#667891;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.minilabel{color:#0780ae;font-size:10px;letter-spacing:.1em;font-weight:900;text-transform:uppercase}
+.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}th{text-align:right;color:#5d728c;font-size:11px;padding:11px 7px;border-bottom:1px solid var(--border)}th:first-child,td:first-child{text-align:left}td{text-align:right;padding:10px 7px;border-bottom:1px solid #edf1f5;font-variant-numeric:tabular-nums}.selected td{font-weight:850;color:#0e79ad;background:#ebf9ff}.break{background:#f1f7fc;padding:12px;border-radius:10px;font-size:12px;color:#425a75;margin-top:14px}
+.formulabox{background:#f4f8fc;border-radius:12px;padding:16px 18px;font-size:13px;color:#38516d;line-height:1.95}.formulabox b{color:#08345f}
+footer{border-top:1px solid #dae4ef;padding:30px 0 60px;margin-top:34px;font-size:12px;color:#61778d}footer b{color:#103b69}.note{margin-top:9px;font-size:12px;color:#718196}.warning{color:#a34522;font-weight:750}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.headlabel{display:none}.brandicon{width:64px;height:64px}.hero{padding:40px 0}.panel{padding:22px}.stats{gap:9px}}
+@media(max-width:450px){.wrap{width:min(100% - 24px,1160px)}.brandsub{font-size:10px;letter-spacing:.07em}.brandtitle{font-size:20px}.brandicon{width:57px;height:57px}.brand{gap:10px}.fieldgrid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.segment span{font-size:11px}.panel{padding:18px}.hero h1{font-size:33px}}
+@media print{body{background:white}.brandbar,.panel{box-shadow:none}.hero{padding:16px 0!important;print-color-adjust:exact}.layout{display:block}.layout>.stack{display:block}.panel{break-inside:avoid;margin:12px 0;padding:16px}.btnrow{display:none}details:not([open])> :not(summary){display:block!important}footer{padding:10px 0}}
+</style>
+</head>
+<body>
+<header class="brandbar"><div class="wrap brandline">
+<a class="brand" href="#" aria-label="Technik verstehen mit Robert – Start">
+<svg class="brandicon" viewBox="0 0 100 100" role="img" aria-label="Schneeflocke und Flamme">
+<path d="M48 5 A45 45 0 0 0 49 95" fill="none" stroke="#0b3765" stroke-width="8"/>
+<path d="M56 6 A45 45 0 0 1 56 95" fill="none" stroke="#f97820" stroke-width="8"/>
+<path d="M48 15 V85 M18 50 H48 M25 28 L48 50 L25 72 M36 20 L48 33 L60 21 M36 80 L48 67" fill="none" stroke="#26aee9" stroke-width="5.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55 89 C84 70 94 47 70 20 C72 45 58 44 58 56 C50 47 53 35 56 27 C34 51 37 70 55 89 Z" fill="#fc7926"/><path d="M60 80 C72 68 72 55 66 43 C66 61 52 60 60 80 Z" fill="#ffc044"/>
+</svg>
+<div><div class="brandtitle">Technik verstehen<small>mit <b>Robert</b></small></div><div class="brandsub">SHK-Wissen einfach erklärt</div></div>
+</a><div class="headlabel">Dein Heizungsrechner</div>
+</div></header>
+<section class="hero"><div class="wrap"><div class="eyebrow">Heizklar · Dein Energievergleich</div><h1>Weniger raten.<br>Besser rechnen.</h1><p>Was kostet dich Heizen mit Öl, Gas oder Wärmepumpe? Vergleiche alle drei Systeme auf Grundlage desselben Wärmebedarfs – mit deinen eigenen Preisen.</p><div class="heroline"><span class="tag">Öl &amp; Gas</span><span class="tag">Wärmepumpe &amp; JAZ</span><span class="tag">Wirtschaftlichkeit</span></div></div></section>
+<main class="wrap">
+<div class="layout"><div class="stack">
+<section class="panel" aria-labelledby="heatheading"><div class="sectiontitle"><span class="num">1</span><div><h2 id="heatheading">Dein Jahresverbrauch</h2><p class="muted">Was ist dir aus deiner Heizkostenabrechnung bekannt?</p></div></div>
+<div class="segment" role="group" aria-label="Berechnungsgrundlage">
+<label><input type="radio" name="source" value="oil" checked><span>Heizöl · Liter</span></label><label><input type="radio" name="source" value="gas"><span>Gas · kWh</span></label><label><input type="radio" name="source" value="heat"><span>Wärme · kWh</span></label>
+</div>
+<label class="field"><span id="baseLabel">Heizöl pro Jahr</span><div class="control hasunit"><input id="base" type="text" inputmode="decimal" value="2500" aria-describedby="basehelp"><span class="unit" id="baseUnit">Liter / Jahr</span></div></label>
+<p id="basehelp" class="info">Ein volles, repräsentatives Jahr verwenden. Warmwasser bei allen Systemen im gleichen Umfang berücksichtigen.</p>
+</section>
+<section class="panel" aria-labelledby="priceheading"><div class="sectiontitle"><span class="num">2</span><div><h2 id="priceheading">Preise &amp; Effizienz</h2><p class="muted">Eigene Bruttopreise statt pauschaler Versprechen.</p></div></div>
+<div class="fieldgrid">
+<label class="field"><span>Heizöl · €/Liter</span><div class="control hasunit"><input id="oilprice" value="1,05" inputmode="decimal"><span class="unit">€/Liter</span></div></label>
+<label class="field"><span>Gas · ct/kWh</span><div class="control hasunit"><input id="gasprice" value="11" inputmode="decimal"><span class="unit">ct/kWh</span></div></label>
+<label class="field"><span>WP-Strom · ct/kWh</span><div class="control hasunit"><input id="elprice" value="28" inputmode="decimal"><span class="unit">ct/kWh</span></div></label>
+<label class="field"><span>JAZ · Jahresarbeitszahl</span><div class="control"><input id="jaz" value="3,5" inputmode="decimal"></div></label>
+<label class="field"><span>Öl-Nutzungsgrad · %</span><div class="control hasunit"><input id="oileff" value="80" inputmode="decimal"><span class="unit">%</span></div></label>
+<label class="field"><span>Gas-Nutzungsgrad · %</span><div class="control hasunit"><input id="gaseff" value="90" inputmode="decimal"><span class="unit">%</span></div></label>
+</div><p class="info">JAZ = abgegebene Jahreswärme ÷ gesamter Jahresstrom inkl. Heizstab und erfasster Hilfsenergie. Nutzungsgrade sind Jahreswerte, keine Momentanwirkungsgrade.</p>
+<details class="details"><summary>Fixkosten &amp; Zusatzstrom einstellen</summary><div class="fieldgrid costgrid">
+<label class="field"><span>Öl · €/Jahr</span><div class="control hasunit"><input id="oilfixed" value="300" inputmode="decimal"><span class="unit">€/Jahr</span></div></label>
+<label class="field"><span>Gas · €/Jahr</span><div class="control hasunit"><input id="gasfixed" value="350" inputmode="decimal"><span class="unit">€/Jahr</span></div></label>
+<label class="field"><span>WP · €/Jahr</span><div class="control hasunit"><input id="wpfixed" value="250" inputmode="decimal"><span class="unit">€/Jahr</span></div></label></div>
+<p class="info">Beispiele: Wartung, Schornsteinfeger, Grundpreis und zusätzliche Betriebskosten. Doppelerfassungen vermeiden.</p></details></section>
+<div class="btnrow"><button class="btn secondary" id="reset" type="button">↺ Zurücksetzen</button><button class="btn" id="print" type="button">Ergebnis drucken ↗</button></div>
+</div>
+<div class="stack">
+<section class="panel summary" aria-live="polite"><span class="topchip">Dein Ergebnis · laufende Kosten</span><h2 id="winner">Wärmepumpe ist hier am günstigsten</h2><p class="muted">Berechnet mit deinen Eingaben, für denselben Wärmebedarf.</p><p class="big"><span id="saving">1.075 €</span> <small>pro Jahr Unterschied zu Öl</small></p>
+<div class="stats"><div class="stat"><span>Nutzwärme / Jahr</span><strong id="heatval">20.000 kWh</strong></div><div class="stat"><span>WP-Strom / Jahr</span><strong id="power">5.714 kWh</strong></div><div class="stat"><span>WP-Kosten / Monat¹</span><strong id="wpm">154 €</strong></div></div></section>
+<section class="panel"><div class="eyebrow" style="color:#087ba9">Gleiche Wärme, andere Kosten</div><h2>Deine Systeme im Vergleich</h2><div id="compare" aria-live="polite"></div><p class="note">¹ Jahreskosten ÷ 12, kein prognostizierter Abschlag. Alle Kosten inkl. angesetzter Fixkosten; Anschaffungskosten nicht enthalten.</p></section>
+<section class="panel"><div class="eyebrow" style="color:#087ba9">Was wäre, wenn?</div><h2>Wie die JAZ den Verbrauch verändert</h2><p class="muted">Gleicher Wärmebedarf, unterschiedlicher Anlagenwirkungsgrad.</p><div class="tablewrap"><table><thead><tr><th>JAZ</th><th>Strom/Jahr</th><th>Gesamtkosten/Jahr</th></tr></thead><tbody id="jazrows"></tbody></table></div><p class="break" id="breakEven"></p></section>
+</div></div>
+<div class="layout" style="margin-top:24px"><section class="panel"><h2>Lohnt sich ein Wechsel?</h2><p class="muted">Einfache Amortisation gegenüber deiner Vergleichsheizung.</p>
+<div class="fieldgrid" style="margin-top:18px"><label class="field"><span>Vergleichsheizung</span><select id="compareTo"><option value="oil">Ölheizung</option><option value="gas">Gasheizung</option></select></label><label class="field"><span>Mehrinvestition Wärmepumpe · €</span><div class="control hasunit"><input id="investment" value="18000" inputmode="decimal"><span class="unit">€</span></div></label></div><p class="break" id="payback">–</p><p class="info">Zusätzliche Investition nach individuell bestätigten Zuschüssen, abzüglich der Alternative. Bei Weiterbetrieb einer Bestandsanlage: gesamte Nettoinvestition der WP. Ohne Zinsen, Preisänderungen, Reparaturen oder Ersatzinvestitionen.</p>
+</section><section class="panel"><h2>Nachvollziehbar bis zur Formel</h2><div class="formulabox" id="formulas"></div><details class="details"><summary>Annahmen, Grenzen &amp; Quellen</summary><p class="info">Die Modellrechnung nutzt 10 kWh/Liter Heizöl und individuelle Jahresnutzungsgrade. Gaswerte sind bezogen auf abgerechnete kWh. Die eingegebene JAZ steht für die gesamte Wärmepumpenanlage. Es handelt sich nicht um eine Heizlastberechnung nach DIN EN 12831, keine Förderzusage und keine Wirtschaftlichkeitsgarantie. Preise und Betriebskosten bitte selbst prüfen.</p></details></section></div>
+</main>
+<footer><div class="wrap"><b>TECHNIK VERSTEHEN MIT ROBERT</b> · SHK-Wissen einfach erklärt<br>Heizklar · Unabhängige Modellrechnung · Preise selbst festlegen. Zusammenhänge verstehen.</div></footer>
+<script>
+(function(){
+"use strict";
+var defaultValues={base:"2500",oilprice:"1,05",gasprice:"11",elprice:"28",jaz:"3,5",oileff:"80",gaseff:"90",oilfixed:"300",gasfixed:"350",wpfixed:"250",investment:"18000"};
+var euro=new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR",maximumFractionDigits:0});
+var whole=new Intl.NumberFormat("de-DE",{maximumFractionDigits:0});
+var dec=new Intl.NumberFormat("de-DE",{minimumFractionDigits:1,maximumFractionDigits:1});
+var get=function(id){return document.getElementById(id)};
+var val=function(id){var n=Number(get(id).value.trim().replace(/\s/g,"").replace(/\./g,"").replace(",","."));return Number.isFinite(n)?n:NaN};
+var fmt=function(n){return euro.format(n)}, fnum=function(n){return whole.format(n)}, fdec=function(n){return dec.format(n)};
+var state="oil",last="";
+function update(){
+state=document.querySelector('input[name="source"]:checked').value;
+get("baseLabel").textContent=state==="oil"?"Heizöl pro Jahr":state==="gas"?"Gasverbrauch pro Jahr":"Wärmebedarf pro Jahr";
+get("baseUnit").textContent=state==="oil"?"Liter / Jahr":"kWh / Jahr";
+var p={};Object.keys(defaultValues).forEach(function(k){p[k]=val(k)});
+var ok=Object.keys(p).every(function(k){return Number.isFinite(p[k])&&p[k]>=0})&&p.base>0&&p.jaz>0&&p.oileff>0&&p.oileff<=100&&p.gaseff>0&&p.gaseff<=100;
+if(!ok){get("winner").textContent="Bitte Eingaben prüfen";get("saving").textContent="–";["heatval","power","wpm"].forEach(function(k){get(k).textContent="–"});get("compare").textContent="Alle Werte müssen gültig und positiv sein. Wirkungsgrade maximal 100 %.";get("jazrows").textContent="";get("payback").textContent="Bitte Werte prüfen.";get("breakEven").textContent="";get("formulas").textContent="Bitte Werte prüfen.";return;}
+var heat=state==="oil"?p.base*10*p.oileff/100:state==="gas"?p.base*p.gaseff/100:p.base;
+var oilL=heat/(10*p.oileff/100), gasK=heat/(p.gaseff/100), power=heat/p.jaz;
+var data=[{id:"oil",name:"Ölheizung",cost:oilL*p.oilprice+p.oilfixed,consumption:fnum(oilL)+" Liter pro Jahr"},
+{id:"gas",name:"Gasheizung",cost:gasK*p.gasprice/100+p.gasfixed,consumption:fnum(gasK)+" kWh pro Jahr"},
+{id:"wp",name:"Wärmepumpe",cost:power*p.elprice/100+p.wpfixed,consumption:fnum(power)+" kWh pro Jahr"}];
+data.sort(function(a,b){return a.cost-b.cost});
+var best=data[0],max=Math.max.apply(null,data.map(function(d){return d.cost})),oilCost=data.find(function(d){return d.id==="oil"}).cost,gasCost=data.find(function(d){return d.id==="gas"}).cost,wpCost=data.find(function(d){return d.id==="wp"}).cost;
+var comparative=best.id==="oil"?gasCost:oilCost;
+var dif=Math.abs(comparative-best.cost);
+get("winner").textContent=best.name+" hat hier die niedrigsten Jahreskosten";
+get("saving").textContent=fmt(dif);
+get("saving").nextElementSibling.textContent="pro Jahr weniger als "+(best.id==="oil"?"Gas": "Öl");
+get("heatval").textContent=fnum(heat)+" kWh";
+get("power").textContent=fnum(power)+" kWh";
+get("wpm").textContent=fmt(wpCost/12);
+get("compare").innerHTML=data.map(function(d){var share=Math.max(3,100*d.cost/Math.max(max,1));return '<div class="compareitem '+(d.id===best.id?"best":"")+'"><div class="comparetop"><strong>'+d.name+'</strong><span class="amount">'+fmt(d.cost)+'</span></div><div class="barbg"><div class="barfill" style="width:'+share.toFixed(1)+'%"></div></div><div class="comparisonmeta"><span>'+fdec(d.cost/heat*100)+' ct/kWh Wärme</span><span>'+d.consumption+'</span></div>'+(d.id===best.id?'<div class="minilabel" style="margin-top:7px">Günstigstes Szenario</div>':'')+'</div>'}).join("");
+var jazs=[2,2.5,3,3.5,4,4.5,5]; if(p.jaz<2||p.jaz>5)jazs.push(p.jaz); jazs.sort(function(a,b){return a-b});
+get("jazrows").innerHTML=jazs.map(function(j){var e=heat/j*p.elprice/100+p.wpfixed;return '<tr class="'+(Math.abs(j-p.jaz)<.01?"selected":"")+'"><td>'+fdec(j)+'</td><td>'+fnum(heat/j)+' kWh</td><td>'+fmt(e)+'</td></tr>'}).join("");
+var kwhPrice=p.elprice/100;
+var threshold=(oilCost-p.wpfixed)>0?heat*kwhPrice/(oilCost-p.wpfixed):Infinity;
+get("breakEven").textContent=Number.isFinite(threshold)?"Ab einer JAZ über "+fdec(threshold)+" ist die Wärmepumpe unter diesen Annahmen im Betrieb günstiger als Öl.":"Unter diesen Annahmen liegt kein positiver JAZ-Schwellenwert für einen Vorteil gegenüber Öl vor.";
+var current=get("compareTo").value==="gas"?gasCost:oilCost, yearlySave=current-wpCost;
+get("payback").textContent=p.investment===0?"Keine Mehrinvestition angesetzt.":yearlySave>0?"Rechnerisch nach "+fdec(p.investment/yearlySave)+" Jahren ausgeglichen ("+fmt(yearlySave)+" jährliche Einsparung).":"Mit diesen Eingaben keine Amortisation durch laufende Kosteneinsparungen.";
+var basis=state==="oil"?fnum(p.base)+" Liter × 10 kWh/Liter × "+fnum(p.oileff)+" %":state==="gas"?fnum(p.base)+" kWh Gas × "+fnum(p.gaseff)+" %":fnum(p.base)+" kWh vorgegebene Nutzwärme";
+get("formulas").innerHTML='<b>1. Nutzwärme:</b> '+basis+' = <b>'+fnum(heat)+' kWh/Jahr</b><br><b>2. WP-Strom:</b> '+fnum(heat)+' ÷ '+fdec(p.jaz)+' = <b>'+fnum(power)+' kWh/Jahr</b><br><b>3. WP-Kosten:</b> '+fnum(power)+' × '+fdec(kwhPrice)+' €/kWh + '+fmt(p.wpfixed)+' = <b>'+fmt(wpCost)+'/Jahr</b>';
+}
+var debounce=false;
+document.querySelectorAll('input,select').forEach(function(el){el.addEventListener("input",update);el.addEventListener("change",update)});
+document.querySelectorAll('input[name="source"]').forEach(function(el){el.addEventListener("change",function(){get("base").value=this.value==="oil"?"2500":this.value==="gas"?"22500":"20000";update()})});
+get("reset").addEventListener("click",function(){Object.keys(defaultValues).forEach(function(k){get(k).value=defaultValues[k]});document.querySelector('input[value="oil"][name="source"]').checked=true;get("compareTo").value="oil";update()});
+get("print").addEventListener("click",function(){window.print()});
+update();
+})();
+</script></body></html>
